@@ -1,7 +1,7 @@
 class Node {
   constructor(value) {
     this.value = value;
-    this.next = null;
+    this.next = null; // 내 전에 들어온 노드, 내 앞에 들어온 노드
   }
 }
 
@@ -27,7 +27,7 @@ class Stack {
       this.first.next = temp;
     }
 
-    return this.size++;
+    return ++this.size;
   }
 
   pop() {
