@@ -6,7 +6,7 @@ class Node {
   }
 }
 
-class BinarySerachTree {
+export class BinarySerachTree {
   constructor() {
     this.root = null;
   }
@@ -128,18 +128,18 @@ class BinarySerachTree {
   }
 }
 
-const tree = new BinarySerachTree();
-// tree.root = new Node(10); // root 생성
-tree.insert(10);
-tree.insert(5);
-tree.insert(16);
-tree.insert(20);
-tree.insert(14);
-tree.insert(15);
-tree.insert(3);
-tree.insert(1);
-tree.insert(21);
-tree.insert(19);
-// tree.remove(3); // 하나
-tree.remove(16);
-console.log(tree);
+// const tree = new BinarySerachTree();
+// // tree.root = new Node(10); // root 생성
+// tree.insert(10);
+// tree.insert(5);
+// tree.insert(16);
+// tree.insert(20);
+// tree.insert(14);
+// tree.insert(15);
+// tree.insert(3);
+// tree.insert(1);
+// tree.insert(21);
+// tree.insert(19);
+// // tree.remove(3); // 하나
+// tree.remove(16);
+// console.log(tree);
