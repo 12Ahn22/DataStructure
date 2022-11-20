@@ -1,0 +1,23 @@
+{
+  "name": "0_datastructure",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/12Ahn22/DataStructure.git"
+  },
+  "type": "module",
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/12Ahn22/DataStructure/issues"
+  },
+  "homepage": "https://github.com/12Ahn22/DataStructure#readme"
+}
