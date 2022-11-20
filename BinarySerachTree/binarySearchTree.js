@@ -126,13 +126,6 @@ class BinarySerachTree {
     }
     return true;
   }
-  findMin() {
-    if (!this.left) {
-      return this;
-    }
-
-    return this.left.findMin();
-  }
 }
 
 const tree = new BinarySerachTree();
