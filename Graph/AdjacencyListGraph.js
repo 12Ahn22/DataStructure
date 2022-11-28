@@ -1,16 +1,16 @@
 class AdjacencyListGraph {
   constructor() {
-    // this.adjacencyList = {};
+    this.adjacencyList = {};
 
     // 테스트용 그래프 데이터
-    this.adjacencyList = {
-      A: ["B", "C"],
-      B: ["A", "D"],
-      C: ["A", "E"],
-      D: ["B", "E", "F"],
-      E: ["C", "D", "F"],
-      F: ["D", "E"],
-    };
+    // this.adjacencyList = {
+    //   A: ["B", "C"],
+    //   B: ["A", "D"],
+    //   C: ["A", "E"],
+    //   D: ["B", "E", "F"],
+    //   E: ["C", "D", "F"],
+    //   F: ["D", "E"],
+    // };
   }
 
   // add vertext
