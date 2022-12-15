@@ -1,16 +1,16 @@
 class AdjacencyListGraph {
   constructor() {
-    this.adjacencyList = {};
+    // this.adjacencyList = {};
 
     // 테스트용 그래프 데이터
-    // this.adjacencyList = {
-    //   A: ["B", "C"],
-    //   B: ["A", "D"],
-    //   C: ["A", "E"],
-    //   D: ["B", "E", "F"],
-    //   E: ["C", "D", "F"],
-    //   F: ["D", "E"],
-    // };
+    this.adjacencyList = {
+      A: ['B', 'C'],
+      B: ['A', 'D'],
+      C: ['A', 'E'],
+      D: ['B', 'E', 'F'],
+      E: ['C', 'D', 'F'],
+      F: ['D', 'E'],
+    };
   }
 
   // add vertext
@@ -67,17 +67,18 @@ class AdjacencyListGraph {
   DFSrecursive(start) {
     // 결과를 저장하는 배열
     const result = []; // 순서
-    const visited = {}; // 방문 vertex 배열
+    const visited = {}; // 방문 vertex 배열 -> 재귀를 더 돌 여부를 체크함, BaseCase 역할?
     const adjacencyList = this.adjacencyList; // 즉시 실행 함수 내부에서 this는 전역 객체기 때문에 변수로 선언해서 전달함
 
     // 즉시 실행 함수
     (function dfs(vertex) {
-      // Base Case
+      // Base Case가 아니라, vertex값이 없는 경우 종료해주기 위한 처리
       if (!vertex) return null;
 
       // 방문 처리
       visited[vertex] = true;
       result.push(vertex);
+      // visited되면 반복하지않으니까 재귀는 종료됨
       adjacencyList[vertex].forEach((neighbor) => {
         // 방문하지 않았다면 재귀 시킨다.
         if (!visited[neighbor]) {
